@@ -1,3 +1,5 @@
+mod mastermind;
+
 fn main() {
-    println!("Hello, world!");
+    let _ = mastermind::Mastermind::new([1,1,1,1]);
 }
