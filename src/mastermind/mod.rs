@@ -1,4 +1,4 @@
-mod hint;
+pub mod hint;
 
 use hint::Hint;
 
@@ -141,6 +141,7 @@ mod tests {
         let _ = game.guess([1, 2, 3, 4]);
         let hint = game.guess([1, 2, 3, 4]);
 
-        assert_eq!(Err(Error::MaxGuesses), hint)
+        assert_eq!(Err(Error::MaxGuesses), hint);
+        assert!(!game.is_resolved());
     }
 }

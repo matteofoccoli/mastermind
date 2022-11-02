@@ -1,7 +1,7 @@
 #[derive(PartialEq, Debug)]
 pub struct Hint {
-    in_right_position: u32,
-    in_wrong_position: u32,
+    pub in_right_position: u32,
+    pub in_wrong_position: u32,
 }
 
 impl Hint {
